@@ -1,0 +1,7 @@
+@media all and (max-width:480px) {
+    header .header-bottom .logo {padding-left: 5px;}
+    .best .container {max-width: 100%; }
+    .best .best-list ul li { }
+    .best br {display: block;}
+    
+}

@@ -1,0 +1,14 @@
+p {margin-bottom: 0; }
+
+.section-container.sub-header-container {
+    height:505px; background:url(../img/sub-page-meeting.jpg) center -220px no-repeat; 
+    background-size:cover; }
+
+.section-container.sub-header-container .sub-header { }
+.section-container.sub-section-container {margin-top: -200px; }
+.section-container.sub-section-container .page-contents {min-height:350px; background:rgba(192,192,192,0.4); padding: 1rem;}
+.sub-header h2, .sub-header > p, .page-contents > p {
+    color:#fff!important; font-weight:300; text-shadow: 3px 1px 8px rgba(0, 0, 0, 0.5);
+}
+.section-container.sub-section-container:after {content:''; position:relative; display:block;
+     width:100%; height:200px; background:rgba(192,192,192,0.4); }

@@ -1,0 +1,141 @@
+* {box-sizing: border-box; }
+html, body {margin: 0; padding: 0; width: 100%; overflow-x: hidden;}
+a {text-decoration: none; }
+p {margin: 0; }
+ul, li {list-style: none; margin: 0; padding: 0;}
+
+/* layout */
+.wrapper {max-width: 100%; }
+header {}
+main { }
+footer {min-height: 197px;}
+
+
+/* header */ 
+.header_inner {display: flex; }
+.header_inner h1 {font-size: 0; }
+.header_inner h1 a.logo {
+    display: inline-block; width: 49px; height: 49px; 
+    background: url(../img/naver-logo.png) 0 0 / 49px auto;
+    background-color: #00c83c;
+    line-height: 49px; vertical-align: middle;
+}
+.header_inner .header_title {
+    flex: 1; 
+    background: #2d3539;
+    padding: 15px 10px;
+    color: #fff;
+}
+
+
+/* main > join */ 
+section.join {position: relative; height: 403px; background: url(../img/main1.jpg) no-repeat 75% 50%;background-size: cover;}
+section.join .join_text {position: absolute; left: 50%; top: 45%; transform: translate(-50%, -50%); width: 100%; text-align: center; }
+section.join .join_text .store_icon {
+    display: inline-block;
+    width: 72px; height: 72px; background: url(../img/n-store.png) no-repeat 0 0; background-size: cover;
+    border-radius: 2px;
+}
+section.join .join_text > p {color: #fff; letter-spacing: -1px; margin-bottom: 27.5px;}
+section.join .join_text > a.join_btn {display: inline-block; width: 160px; height: 48px; line-height: 48px;}
+a.join_btn1 {background: #424a4d; border: 2px solid #34393d; color: #19e550; margin-bottom: 8px;}
+a.join_btn2 {background: #19e550; border: 2px solid #04ae33; color: #fff; }
+a.tip {
+    position: absolute; left: 0; bottom: 0;
+    display: inline-block; width: 100%; height: 69.5px; background: rgba(0,0,0,0.7);
+    padding: 17px;
+}
+a.tip > span {display: inline-block; vertical-align: middle;}
+a.tip > span.tip_icon {
+    background: #9da3df; width: 37.5px; height: 32.5px; line-height: 32.5px; text-align: center; color: #fff; 
+    border-radius: 2px; margin-right: 12px;
+}
+a.tip .tip_txt_box {font-size: 14px; cursor: pointer;}
+a.tip .tip_txt_box span.tip_tit {color: #fff; }
+a.tip .tip_txt_box span.tip_tit:after {
+    content: ''; display: inline-block; 
+    width: 9px; height: 19px; background: url(../img/tip_arrow.png) 3px 2px / 6px auto no-repeat; 
+    vertical-align: middle;
+}
+a.tip .tip_txt_box span.tip_txt {color: #cfcfd1; font-weight: 200;}
+
+
+/* main > slide1 */ 
+section.slide1 {height: 500px; text-align: center; font-weight: 200;}
+section.slide1 > h4 {color: #2cdb64; }
+section.slide1 > h4, 
+section.infor > h4,
+section.customer > h4 {
+    text-decoration: underline; font-size: 14px; margin-top: 44px;
+}
+section.slide1 > p, 
+section.infor > p,
+section.customer > p {
+    margin-bottom: 10px; font-size: 22px; color: #000; letter-spacing: -1px;
+}
+section.slide1 .slide1_img {
+    position: relative;
+    background: url(../img/main2.jpg) no-repeat; background-size: cover; 
+    max-width: 225px; height: 305px; margin: 20px auto; 
+}
+section.slide1 .slide1_img .slide1_txt_box {
+    position: absolute; left: 0; bottom: 0;
+    width: 100%; height: 88px; background: rgba(0,0,0,0.7);
+    padding: 15px; cursor: pointer;
+}
+section.slide1 .slide1_img .slide1_txt_box > p {color: #fff; font-size: 13px;}
+section.slide1 .slide1_img .slide1_txt_box > p:before {
+    content:''; display: block; width: 28.5px; height: 16.5px; 
+    background: url(../img/arrow-top.png) 0 0 no-repeat / 28.5px auto;
+    margin: 0 auto; margin-bottom: 5px;
+}
+section.slide1 .slide1_img .slide1_txt_box > p > span {display: inline-block; font-weight: 300; font-size: 18.5px;}
+
+
+/* main > infor */
+section.infor {width: 100%; height: 532px; padding: 0 9.51px; text-align: center; font-weight: 200;}
+section.infor > h4 {color: #a57bdf; }
+section.infor > p { }
+section.infor ul {}
+section.infor ul li {
+    position: relative;
+    float: left; width: 48%; height: 108.5px; margin: 3px;
+    padding: 5px 30px; border: 1px solid #e7e6eb; font-weight: 400; cursor: pointer;
+} 
+section.infor ul li > div {height: 60px;}
+section.infor ul li .infor_img1 {background: url(../img/infor-1.png) 50% 50% no-repeat / 64px auto;}
+section.infor ul li .infor_img2 {background: url(../img/infor-2.png) 50% 50% no-repeat / 64px auto;} 
+section.infor ul li .infor_img3 {background: url(../img/infor-3.png) 50% 50% no-repeat / 50px auto;} 
+section.infor ul li .infor_img4 {background: url(../img/infor-4.png) 50% 50% no-repeat / 55px auto;} 
+section.infor ul li .infor_img5 {background: url(../img/infor-5.png) 50% 50% no-repeat / 55px auto;} 
+section.infor ul li .infor_img6 {background: url(../img/infor-6.png) 50% 50% no-repeat / 55px auto;} 
+section.infor ul li > p {height: 22px; color: #54555a; letter-spacing: -1px; font-size: 13.5px;}
+
+
+/* main > customer */
+section.customer {height: 451px; padding: 0 35px; text-align: center; font-weight: 200;}
+section.customer > h4 {color: #4c80e3; }
+section.customer > p { }
+section.customer .slide2_img {
+    position: relative;
+    background: url(../img/question.png) no-repeat 50% 50%; background-size: contain; 
+    max-width: 100%; height: 200px; margin: 0 auto; 
+}
+section.customer > ul {display: flex; justify-content: space-evenly; margin-top: 12px; }
+section.customer > ul > li {width: 75px; height: 95px; cursor: pointer;}
+section.customer > ul > li > .talk_img {width: 100%; height: 50px; background: url(../img/talk2.png) no-repeat 50% 50% / 50px auto; }
+section.customer > ul > li > p {min-height: 46px; margin-top: 9px; letter-spacing: -1px;}
+
+
+/* footer */
+footer .notice {height: 41px; padding: 0 14px; margin-top: 16px; line-height: 41px; border-bottom: 1px solid #e7e6eb; }
+footer .notice > span.low_notice {float: left; color: #000; cursor: pointer;}
+footer .notice > span.open_view {float: right; color: #a5a5a5; font-weight: 200; text-decoration: underline; cursor: pointer;}
+footer span.top_btn, 
+footer span.biz_infor {display: inline-block; width: 97%; height: 44px; margin: 7px 5px; text-align: center; line-height: 44px; color: #54555a; cursor: pointer;} 
+footer span.top_btn {border: 1px solid #e7e6eb; cursor: pointer;}
+footer > ul {display: flex; justify-content: space-around;}
+footer > ul > li { }
+footer > ul > li > a,
+footer span.corp {display: inline-block; height: 30px; line-height: 30px; font-size: 12px; text-align: center; vertical-align: middle; color: #54555a;}
+footer span.corp {width: 100%;}

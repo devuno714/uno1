@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Design</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Nanum+Gothic:800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="left">
+            <a href="#" class="logo">NETMOVIE</a>
+            <div class="login-box">
+                <h2>로그인</h2>
+                <form action="#">
+                    <input type="text" class="email-tel" name="email-tel" placeholder="이메일 주소 또는 전화번호" autofocus required><br>
+                    <p class="lgn-msg">정확한 이메일 주소나 전화번호를 입력하세요.</p>
+                    <input type="password" class="pwd-1" name="pwd-1" placeholder="비밀번호" required>
+                    <p class="lgn-msg">비밀번호는 4 - 60자 사이여야 합니다.</p>
+                    <input type="submit" class="btn-1" value="로그인">    
+                    <div class="lgn-save-box">                        
+                        <input type="checkbox" id="lgn-save">
+                        <label for="lgn-save" id="lgn-save">로그인 정보 저장</label>
+                        <a href="#" class="help">도움이 필요하신가요?</a>    
+                    </div>                                             
+                </form>
+                <a href="#" class="fb">
+                    <img src="./img/FB-f-Logo__blue_57.png" style="width: 20px; height: 20px;" alt="페이스북아이콘">
+                    <span>Facebook으로 로그인</span>                    
+                </a>
+                <p>Netflix 회원이 아닌가요? <a href="#" class="join">지금 가입하세요.</a></p>
+            </div>
+            <div class="left-footer">
+                <a href="#" class="question">질문이 있으신가요?</a>
+                <ul>
+                    <li><a href="#">기프트카드 약관</a></li>
+                    <li><a href="#">이용 약관</a></li>
+                    <li><a href="#">개인정보 처리방침</a></li>
+                </ul>
+            </div>
+        </div><!-- left -->
+        <div class="right">
+            <div class="login-wrapper">
+                <h1>Welcome</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi repellendus doloribus error inventore odio amet?</p><br>
+                <form action="">
+                    <input type="text" class="right-email" placeholder="Email Address" autofocus required><br>
+                    <input type="password" class="pwd-2" placeholder="Password" required><br>
+                    <input type="submit" class="btn-2" value="Login">
+                </form>
+                <ul class="pwd-rgs">
+                    <li><a href="#">Password</a></li>
+                    <li><a href="#">Register</a></li>
+                </ul>
+                <span class="sort-line">or connect with</span>
+                <ul class="social-login">
+                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-google"></i> Google</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                </ul>
+            </div>
+        </div><!-- right -->
+    </div><!-- wrapper -->
+</body>
+</html>

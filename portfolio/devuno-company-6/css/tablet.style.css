@@ -1,0 +1,18 @@
+.wrapper {flex-direction: column; position: relative;}
+.wrapper .container {padding-left: 0; }
+.wrapper .nav {display: none;}
+.m-nav {display: block; }
+
+.container .main-bg {padding: 0;}
+.container .main-bg a.main-bg-1 {
+    display: block; width: 100%;    
+    background: url(../img/m-main-bg.jpg) 50% 50% no-repeat; background-size: cover;
+}
+
+.container .site-link ul li { max-width: 25%;}
+.container .notice ul.notice-list > li {max-width: 50%;}
+.container .notice ul.notice-list.notice-bot {margin-top: 0; }
+
+.footer {min-height: 275px; padding: 0 70px 20px 70px;}
+.footer p.adr-1, p.adr-2 {line-height: 25px;}
+.m-nav-container .language-select {padding: 50px 0; }

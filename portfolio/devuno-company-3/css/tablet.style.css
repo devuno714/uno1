@@ -1,0 +1,23 @@
+@media all and (max-width:960px) {
+    header .header-bottom .nav-btn {padding-left: 0;}
+    .best .container {max-width: 100%; }
+    footer
+
+}
+@media all and (max-width:768px) {
+    .best .container {max-width: 100%; }
+    .best .best-list ul li:nth-child(1) {background: url(../img/mobile_best1.jpg) center top no-repeat; background-size: cover;}
+    .best .best-list ul li:nth-child(2) {background: url(../img/mobile_best2.jpg) center top no-repeat; background-size: cover;}
+    .best .best-list ul li:nth-child(3) {background: url(../img/mobile_best3.jpg) center top no-repeat; background-size: cover;}
+    .best .best-list ul li a .bg-circle, .best .best-list ul li a .red-circle {bottom: 140px;}
+    .best .best-list ul li a > img {margin-bottom: 135px;}
+    .best .best-list ul li a .bg-circle, 
+    .best .best-list ul li a .red-circle,
+    .best .best-list ul li a .dot-circle {bottom: 125px; }
+    .best .best-list ul li a .best-txt {top: 240px; }
+
+    .more-view-bg {height: auto;}
+    .more-view-bg:after {width: 70%; left: 25%;}
+    .more-view-bg .more-view-left {width: 100%; height: 520px; background: #C10006;}
+    .more-view-text {left: 2%;}
+}

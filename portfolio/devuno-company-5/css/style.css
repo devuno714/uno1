@@ -1,0 +1,120 @@
+html, body {margin: 0; padding: 0; outline: none; }
+div,input {box-sizing: border-box;}
+a {text-decoration: none; }
+ul, li {padding: 0; list-style: none;}
+
+/* ===== layout =====*/
+.wrapper {display: flex; flex-direction: row; width: 100%; height: 100vh;}
+.wrapper .left {position: relative; width: 50%; height: 100%; background: rgba(0,0,0,0.5); padding: 20px;}
+.wrapper .left:after {
+    content:''; position: absolute; left: 0; top: 0; bottom: 0; right: 0; 
+    display: block; width: 100%; height: 100vh; background: url(../img/movie_bg.jpg) center top no-repeat fixed; background-size: cover; z-index: -1;
+}
+.wrapper .right {position: relative; width: 50%; height: 100vh; background:  rgba(0,0,0,0.5); padding: 20px;}
+.wrapper .right:after {
+    content:''; position: absolute; left: 0; top: 0; bottom: 0; right: 0; 
+    display: block; width: 100%; height: 100vh; background: url(../img/woodland.jpg) 500px top no-repeat fixed; background-size: cover; z-index: -1;
+}
+
+/* ===== left =====*/
+.left a.logo {display: inline-block; width: 140px; height: 40px; line-height: 45px; font-size: 45px; color: #e50914; font-family: 'Archivo Black', sans-serif;}
+.left .login-box {
+    position: absolute; left: 0; top: 0; bottom: 40px; right: 0; margin: auto;
+    width: 445px; height: 658px; background: rgba(0,0,0,0.6); border-radius: 5px; padding: 65px;
+}
+.left .login-box h2 {margin-top: 0; color: #ffffff; font-size: 30px; font-weight: 400;}
+.left .login-box p.lgn-msg {font-size: 12px; color: #e87c03; font-weight: 200; margin-bottom: 19px; margin-top: 5px; padding-left: 10px;}
+.left .login-box .email-tel, 
+.left .login-box .pwd-1 {
+    width: 100%; height: 50px; background: #333333; line-height: 50px; font-size: 17px; 
+    border: 0; 
+    padding-left: 15px; border-radius: 5px;
+    color: #ffffff; font-weight: 200;
+    position: relative;
+}
+.left .login-box .btn-1 {
+    width: 100%; height: 50px; background: #e50914; line-height: 50px; margin-bottom: 15px; border: 0; font-size: 17px; color: #ffffff; cursor: pointer;
+}
+.left .login-box .btn-1:hover {background: #ffffff; color: #000000; transition: 1s;}
+.left .login-box .lgn-save-box,
+.left .login-box a.help {
+    color: #737373; font-size: 14px;
+}
+
+.lgn-save-box {padding: 5px; }
+input[type="checkbox"] {display: none; }
+input[type="checkbox"] + label {
+    display: inline-block; position: relative; cursor: pointer;
+}
+input[type="checkbox"] + label:before {
+    content:''; display: inline-block; width: 17px; height: 17px; 
+    background: #737373; border-radius: 3px; margin-right: 5px;
+    line-height: 17px; vertical-align: middle; text-align: center;
+}
+input[type="checkbox"]:checked + label:before {
+    content: '\2713'; background-color: #ffffff; color: #000000; font-weight: 400;
+}
+
+.left .login-box a.help {float: right; display: inline-block;}
+.left .login-box a.help:hover {text-decoration: underline;}
+.left .login-box a.fb {display: inline-block; vertical-align: middle; height: 20px; margin-top: 155px;}
+.left .login-box a.fb > span {
+    color: #737373; font-size: 14px; height: 20px; padding-bottom: 10px; line-height: 20px; display: inline-block; vertical-align: middle;
+}
+.left .login-box > p {font-size: 17px; color: #737373;}
+.left .login-box > p > a.join {color: #ffffff; }
+
+/* ===== left-footer ===== */
+.left-footer {
+    content:''; display: block; 
+    position: fixed; bottom: 0; left: 0;
+    width: 50%; min-height: 100px; background: rgba(0,0,0,0.5);  
+    padding: 25px 150px;
+    box-sizing: border-box;
+}
+.left-footer a {font-size: 14px; color: #737373; }
+.left-footer a:hover {text-decoration: underline;}
+.left-footer > ul {display: flex; flex-direction: row; justify-content: space-between;}
+
+/* ===== right ===== */
+.right .login-wrapper {
+    position: absolute; left: 0; top: 0; bottom: 130px; right: 0; margin: auto;
+    width: 445px; height: 658px; padding: 50px; text-align: center; color: #ffffff; font-family: 'Montserrat', sans-serif; font-weight: 300;
+}
+.right .login-wrapper > h1 {font-size: 70px; margin-bottom: 0.3em;}
+.right .login-wrapper > p {font-weight: 100; }
+.right .login-wrapper .right-email,
+.right .login-wrapper .pwd-2,
+.right .login-wrapper > p {margin-bottom: 20px;}
+.right .login-wrapper .right-email,
+.right .login-wrapper .pwd-2 {
+    width: 100%; height: 45px; border: 1px solid #fff; border-radius: 50px;
+    text-align: center; background: rgba(255,255,255,0.001); color: #ffffff; font-size: 18px;
+}
+.right .login-wrapper .right-email::placeholder, 
+.right .login-wrapper .pwd-2::placeholder {color: #ffffff; font-family: 'Montserrat', sans-serif; font-weight: 100;}
+.right .login-wrapper .btn-2 {
+    width: 100%; height: 45px; background: #29AD61; border: 0; color: #ffffff; border-radius: 50px;
+    font-size: 18px; font-weight: 100; cursor: pointer;
+}
+.right .login-wrapper .btn-2:hover {background: #000000; color: #29ad61; transition: 1s;}
+
+.right .login-wrapper > ul.pwd-rgs {display: flex; flex-direction: row; justify-content: center; text-align: center; }
+.right .login-wrapper > ul.pwd-rgs > li {padding: 0 20px;} 
+.right .login-wrapper > ul.pwd-rgs > li:nth-child(1) {border-right: 1px solid #fff;}
+.right .login-wrapper > ul.pwd-rgs > li > a {color: #ffffff; font-weight: 100;}
+.right .login-wrapper > ul.pwd-rgs > li > a:hover {color: #29ad61; transition: 1s;}
+
+.right .login-wrapper > span.sort-line {display: block; margin-top: 60px;}
+.right .login-wrapper > span.sort-line:before, 
+.right .login-wrapper > span.sort-line:after {
+    content:''; display: inline-block; vertical-align: middle;
+    width: 90px; height: 1px; background: #ffffff; margin: 0 10px;
+}
+
+.right .login-wrapper > ul.social-login {display: flex; flex-direction: row; justify-content: center; margin-top: 50px;}
+.right .login-wrapper > ul.social-login > li {width: 33.33%;}
+.right .login-wrapper > ul.social-login > li:nth-child(1) {background: #3B579D; border: 0;}
+.right .login-wrapper > ul.social-login > li:nth-child(2) {background: #BC3A2C; }
+.right .login-wrapper > ul.social-login > li:nth-child(3) {background: #1DA1F2; }
+.right .login-wrapper > ul.social-login > li > a {display: block; height: 35px; line-height: 35px; text-align: center; color: #ffffff; font-size: 12px;}

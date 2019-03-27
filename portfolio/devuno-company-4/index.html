@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio - DashBoard</title>
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Font style -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Google chart -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+</head>
+<body>
+    <div class="header"">
+        <div class="header-inner">
+            <a href="#" class="logo">
+                <img src="./img/logo.png" alt="로고">
+                <span>My Site</span>
+            </a>
+            <p class="welcome">Welcome to admin</p>
+            <ul class="header-right">
+                <li><a href="#" class="email"><i class="fas fa-envelope"></i></a></li>
+                <li><a href="#" class="bell"><i class="fas fa-bell"></i></a></li>
+                <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </div>
+    </div><!-- header -->
+    <section>
+        <nav>
+            <div class="profile">
+                <img src="./img/jony.png" alt="프로필사진">
+                <div class="porfile-detail">DevUno <i class="fas fa-caret-down"></i>
+                    <ul>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Mailbox</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accr-wrap">
+                <a href="#"><i class="fas fa-home"></i> 대시보드</a>
+                <div class="accordion">
+                    <i class="fas fa-list"></i>  
+                    <span>상품관리</span>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                <ul class="panel">
+                    <li><a href="#">상품목록</a></li>
+                    <li><a href="#">진열관리</a></li>
+                    <li><a href="#">item3</a></li>
+                    <li><a href="#">item4</a></li>
+                    <li><a href="#">item5</a></li>
+                </ul>    
+                <div class="accordion">
+                    <i class="fas fa-shopping-cart"></i> 
+                    <span>주문관리</span> 
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                <ul class="panel">
+                    <li><a href="#">배송관리</a></li>
+                    <li><a href="#">취소/환불관리</a></li>
+                    <li><a href="#">item3</a></li>
+                    <li><a href="#">item4</a></li>
+                    <li><a href="#">item5</a></li>
+                </ul>
+                <div class="accordion">
+                    <i class="fas fa-user-check"></i>
+                    <span>회원관리</span> 
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                <ul class="panel">
+                    <li><a href="#">item1</a></li>
+                    <li><a href="#">item2</a></li>
+                    <li><a href="#">item3</a></li>
+                    <li><a href="#">item4</a></li>
+                    <li><a href="#">item5</a></li>
+                </ul>
+                <div class="accordion">
+                    <i class="fas fa-cog"></i>
+                    <span>환경설정</span> 
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                <ul class="panel">
+                    <li><a href="#">item1</a></li>
+                    <li><a href="#">item2</a></li>
+                    <li><a href="#">item3</a></li>
+                    <li><a href="#">item4</a></li>
+                    <li><a href="#">item5</a></li>
+                </ul>
+            </div>            
+        </nav><!-- nav -->
+        <article>
+            <div class="contents-top">
+                <div id="curve_chart" class="curve_chart"></div>
+                <div class="social-count">
+                    <ul>
+                        <li>
+                            <i class="fab fa-facebook-f"></i>
+                            <p>184k <small>likes facebook</small></p>
+                        </li>
+                        <li>
+                            <i class="fab fa-instagram"></i>
+                            <p>204k <small>likes instagram</small></p>
+                        </li>
+                        <li>
+                            <i class="fab fa-twitter"></i>
+                            <p>49k <small>likes twitter</small></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contents-bot">
+                <div class="cont-bot-left">
+                    <div class="last-order-header">
+                        <h2>마지막 주문</h2>
+                        <span class="order-search">
+                            <input type="text" placeholder="Search">
+                            <a href="#"> <i class="fas fa-search"></i></a> 
+                        </span>
+                        <a href="#" class="all-order-btn"><i class="far fa-eye"></i> 모든 주문보기</a>
+                    </div>
+                    <ul class="last-order-title">
+                        <li>주문아이디 <i class="fas fa-sort"></i></li>
+                        <li>날짜 <i class="fas fa-sort"></i></li>
+                        <li>고객 <i class="fas fa-sort"></i></li>
+                        <li>상태 <i class="fas fa-sort"></i></li>
+                        <li>가격 <i class="fas fa-sort"></i></li>
+                        <li>상세보기</li>
+                    </ul>
+                    <ul class="last-order-item">
+                        <li><a href="#">#아이디</a></li>
+                        <li>2019/02/26</li>
+                        <li><a href="#">#고객명</a></li>
+                        <li class="complete">완료</li>
+                        <li>50,000원</li>
+                        <li><a href="#"><i class="fas fa-search-plus"></i></a></li>
+                    </ul>
+                    <ul class="last-order-item">
+                        <li><a href="#">#아이디</a></li>
+                        <li>2019/02/27</li>
+                        <li><a href="#">#고객명</a></li>
+                        <li class="reserve">보류중</li>
+                        <li>21,000원</li>
+                        <li><a href="#"><i class="fas fa-search-plus"></i></a></li>
+                    </ul>
+                    <ul class="last-order-item">
+                        <li><a href="#">#아이디</a></li>
+                        <li>2019/03/01</li>
+                        <li><a href="#">#고객명</a></li>
+                        <li class="waiting">대기중</li>
+                        <li>95,000원</li>
+                        <li><a href="#"><i class="fas fa-search-plus"></i></a></li>
+                    </ul>
+                    <ul class="last-order-item">
+                        <li><a href="#">#아이디</a></li>
+                        <li>2019/03/02</li>
+                        <li><a href="#">#고객명</a></li>
+                        <li class="complete">완료</li>
+                        <li>78,000원</li>
+                        <li><a href="#"><i class="fas fa-search-plus"></i></a></li>
+                    </ul>
+                    <ul class="last-order-item">
+                        <li><a href="#">#아이디</a></li>
+                        <li>2019/03/04</li>
+                        <li><a href="#">#고객명</a></li>
+                        <li class="cancel">취소</li>
+                        <li>32,000원</li>
+                        <li><a href="#"><i class="fas fa-search-plus"></i></a></li>
+                    </ul>
+                    <ul class="last-order-item">
+                        <li><a href="#">#아이디</a></li>
+                        <li>2019/03/05</li>
+                        <li><a href="#">#고객명</a></li>
+                        <li class="complete">완료</li>
+                        <li>55,000원</li>
+                        <li><a href="#"><i class="fas fa-search-plus"></i></a></li>
+                    </ul>
+                    <ul class="last-order-item">
+                        <li><a href="#">#아이디</a></li>
+                        <li>2019/03/07</li>
+                        <li><a href="#">#고객명</a></li>
+                        <li class="waiting">대기중</li>
+                        <li>10,000원</li>
+                        <li><a href="#"><i class="fas fa-search-plus"></i></a></li>
+                    </ul>
+                    <ul class="last-order-item">
+                        <li><a href="#">#아이디</a></li>
+                        <li>2019/03/11</li>
+                        <li><a href="#">#고객명</a></li>
+                        <li>완료</li>
+                        <li>20,000원</li>
+                        <li><a href="#"><i class="fas fa-search-plus"></i></a></li>
+                    </ul>
+                    <ul class="last-order-item">
+                        <li><a href="#">#아이디</a></li>
+                        <li>2019/03/12</li>
+                        <li><a href="#">#고객명</a></li>
+                        <li class="complete">완료</li>
+                        <li>70,000원</li>
+                        <li><a href="#"><i class="fas fa-search-plus"></i></a></li>
+                    </ul>
+                </div>
+                <div class="cont-bot-right">
+                    <div class="new-order">
+                        <h3>신규 주문</h3>
+                        <div class="new-order-bot">
+                            <a href="#">
+                                <img src="./img/camera.png" style="width: 100px; height: 70px;" alt="상품">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, sunt.</p>
+                            </a>                            
+                        </div>                        
+                    </div>
+                    <div class="popular-item">
+                        <h3>오늘의 인기 컨텐츠</h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/laptop.png" style="width: 100px; height: 70px;" alt="상품">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, sunt.</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/smartphone.png" style="width: 100px; height: 70px;" alt="상품">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, sunt.</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/tv.png" style="width: 100px; height: 70px;" alt="상품">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, sunt.</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/camera.png" style="width: 100px; height: 70px;" alt="상품">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, sunt.</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article><!-- article -->
+        <aside>
+            <div class="aside-feed">
+                <h4>Your Daily Feed</h4>
+                <div class="feed-box feed-msg-1">
+                    <img src="./img/feed-img-1.png" alt="피드이미지">
+                    <div class="feed-msg">
+                        <span class="feed-user-name">Nick Name <small>time ago</small></span> <br>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <small class="receive-day">오늘 오후 4시 30분</small>
+                    </div>                    
+                </div>
+                <br>
+                <br>
+                <div class="feed-box feed-msg-2">
+                    <img src="./img/feed-img-2.png" alt="피드이미지">
+                    <div class="feed-msg">
+                        <span class="feed-user-name">Nick Name <small>time ago</small></span> <br>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <small class="receive-day">오늘 오전 2시 10분</small>
+                    </div>                    
+                </div>
+                <br>
+                <br>
+                <div class="feed-box feed-msg-3">
+                    <img src="./img/feed-img-3.png" alt="피드이미지">
+                    <div class="feed-msg">
+                        <span class="feed-user-name">Nick Name <small>time ago</small></span> <br>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <small class="receive-day">오늘 오후 8시 44분</small>
+                    </div>                    
+                </div>
+                <br>
+                <br>
+                <div class="feed-box feed-msg-4">
+                    <img src="./img/feed-img-4.png" alt="피드이미지">
+                    <div class="feed-msg">
+                        <span class="feed-user-name">Nick Name <small>time ago</small></span> <br>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <small class="receive-day">오늘 오전 7시 22분</small>
+                    </div>                    
+                </div>   
+            </div>
+            <div class="aside-news">
+                <h4>News</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <h5>News Title</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <small class="receive-day">오늘 오전 7시 22분</small>      
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h5>News Title</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <small class="receive-day">오늘 오전 7시 22분</small>      
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h5>News Title</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <small class="receive-day">오늘 오전 7시 22분</small>      
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h5>News Title</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <small class="receive-day">오늘 오전 7시 22분</small>      
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h5>News Title</h5>
+                            <p>Lorem ipsum dolor sit amet.</p> 
+                            <small class="receive-day">오늘 오전 7시 22분</small>     
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h5>News Title</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <small class="receive-day">오늘 오전 7시 22분</small>      
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside><!-- aside -->   
+    </section><!-- seciton -->
+    <script>
+        // accordion
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+        }      
+    </script>
+</body>
+</html>

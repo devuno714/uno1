@@ -1,0 +1,144 @@
+h1,
+.slide {
+    text-align: center !important;
+}
+#menu {
+    position: fixed;;
+    left:0;
+    top:0;
+    z-index: 9999;
+}
+li {list-style: none;}
+a {text-decoration: none;}
+
+ul.menu {text-align: center; }
+ul.menu > li {float: left; margin-right: 50px;}
+ul.menu > li > a {font-size: 1em; font-family: 'Montserrat', sans-serif; }
+ul.menu > li > a:hover {color: #999; transition: 1s;}
+
+#section0 {width: 100%; height: 100%; background: url(../img/main-bg.jpg) center top no-repeat; background-size: cover;}
+#section0 h1 { }
+
+#section0 h1, .menu > li > a {font-size: 2.500em; color: #fff; font-family: 'Montserrat', sans-serif;}
+
+#section1 {
+    width: 100%; height: 100%; 
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(222,235,251,1) 100%);
+ }
+#section1 .slide { }
+#section1 .slide .section1-inner {
+  display: flex; flex-direction: row; max-width: 800px; margin: 0 auto; 
+    /* background: rgba(0, 0, 0, 0.2); */
+  } 
+#section1 .slide .section1-inner .product-img {flex: 1; }
+#section1 .slide .section1-inner .product-img {
+    animation: bounce 0.5s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes bounce {
+    from { transform: translate3d(0, -20px, 0);     }
+    to   { transform: translate3d(0, 0, 0); }
+  } 
+#section1 .slide .section1-inner .product-info {flex: 1; padding: 1rem;}
+#section1 .slide .section1-inner .product-info .product-info-inner {display: flex; flex-direction: column; }
+.product-info-inner h1 {}
+.product-info-inner p {flex: 1; margin-top: 0;}
+.product-info-inner button {align-self: center;}
+button{
+    position:relative;
+    max-width: 65%;
+    height:45px;
+    background:#000;
+    padding:0 2em;
+    color:#fff;
+    border:none;
+    font-size:1.3em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+  }
+  button:hover{
+    background:#fff;
+    color:#000;
+  }
+  button:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #000;
+    transition:400ms ease all;
+  }
+  button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  button:hover:before,button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  /* section2 */
+  #section2 {
+    position: relative; width: 100%; height: 100%; background-color: rgba(0,0,0,0.3)!important; color: #fff; 
+    font-family: 'Montserrat', sans-serif;
+  }
+  #section2:after {
+    content: ''; position: absolute; left: 0; top: 0; 
+    background: url(../img/Our-Team-bg.jpg); background-size: cover; width: 100%; height: 100%; z-index: -1;
+  }
+  #section2 .section2-inner {max-width: 1000px; height: 420px; margin: 0 auto;}
+  #section2 .section2-inner > h1 { }
+  #section2 .section2-inner > p {text-align: center; }
+  #section2 .section2-inner > ul {display: flex; flex-direction: row; justify-content: space-around; margin-top: 50px; padding-left: 0;}
+  #section2 .section2-inner > ul > li {width: 200px; height: 250px; text-align: left; position: relative;}
+  #section2 .section2-inner > ul > li:hover ul.social-icon {opacity: 1; transition: 1s;}
+  #section2 .section2-inner > ul > li > img.pf-img {width: 100%; height: 200px;}
+  #section2 .section2-inner > ul > li > ul.social-icon {
+    position: absolute; left: 0; top: 0;
+    display: table; width: 100%; height: 200px; background: rgba(0, 0, 0, 0.3); padding-left: 0; opacity: 0;
+  }
+  #section2 .section2-inner > ul > li > ul.social-icon > li {display: table-cell; vertical-align: middle; text-align: center;}  
+  #section2 .section2-inner > ul > li > ul.social-icon > li > a {font-size: 30px; color: #fff;}
+  #section2 .section2-inner > ul > li > .member-introduce {padding-left: 20px;}
+
+  /* section3 */
+  #section3 {position: relative; width: 100%; height: 100%; background-color: rgba(0,0,0,0.3)!important; color: #fff; font-family: 'Montserrat', sans-serif;}
+  #section3:after {
+    content: ''; position: absolute; left: 0; top: 0;
+    background: url(../img/contact-bg.jpg); background-size: cover; width: 100%; height: 100%; z-index: -1;
+  }
+  #section3 .section3-inner {
+    display: flex; flex-direction: row;
+    max-width: 1200px; min-height: 550px; margin: 0 auto;
+    padding: 30px;
+  }
+  #section3 .section3-inner .section3-left {width: 50%; background-color: rgba(0, 0, 0, 0.5); text-align: left; padding: 80px 30px;}
+  #section3 .section3-inner .section3-left > h1 {text-align: left!important; font-size: 40px; font-family: ;}
+  #section3 .section3-inner .section3-left > h1:hover span.red-underline:after {display: block; width: 175px; }
+  #section3 .section3-inner .section3-left > h1 > span.red-underline:after {
+    content:''; display: block; height: 1px; width: 0;
+    background-color: red; transition: width 2s;
+  }
+  #section3 .section3-inner .section3-left > p {font-style: italic; color: #888;}
+  #section3 .section3-inner .section3-left .adr {margin-top: 120px; }
+  #section3 .section3-inner .section3-left .adr > p {font-weight: 300;  }
+  #section3 .section3-inner .section3-left .adr > p > span.adr-tit {font-weight: 400}
+
+  #section3 .section3-inner .section3-right {width: 50%; background-color: rgba(0, 0, 0, 0.5); padding: 100px 30px;}
+  #section3 .section3-inner .section3-right .contact-write .email,
+  #section3 .section3-inner .section3-right .contact-write .msg, a.contact-btn {margin-top: 15px;}
+  #section3 .section3-inner .section3-right .contact-write span {font-size: 20px; margin-bottom: 5px;}
+  input[type="text"] {width: 90%; height: 40px; padding-left: 10px; font-size: 15px; color: #888; font-style: italic;}
+  input[type="textarea"] {width: 90%; min-height: 100px; padding-left: 10px; font-size: 15px; color: #888888; font-style: italic;}
+  a.contact-btn {display: inline-block; vertical-align: middle; width: 93%; height: 40px; 
+    line-height: 40px; text-align: center; background: #53ACA2; font-size: 22px; color: #000; font-weight: bold;
+  }
+  a.contact-btn:hover {background: red; color: #ffffff; transition: 1s;}
