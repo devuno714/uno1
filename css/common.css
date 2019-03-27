@@ -1,0 +1,56 @@
+html, body {
+     margin: 0; padding: 0;
+     font-family:'Noto Sans KR', 'sans-serif' !important;
+     font-weight: 100;
+     width: 100%;
+     height: 100%;     
+     outline: none;   
+}
+
+/* 전체 감싸는 영역 */
+.wrapper {
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0,0,0,0.6);
+     position: relative;
+}
+.wrapper:after {
+     content: "";
+     width: 100%; height: 100%;     
+     position: absolute; left: 0; top: 0; bottom: 0; right: 0;     
+     background: url(/img/img03.jpeg) center center no-repeat fixed;
+     background-size: cover;
+     z-index: -1;
+}
+
+/* 가운데 영역 */
+.container-fluid {
+     padding-right: 70px;
+     padding-left: 70px;
+}
+
+/* header */
+header {height: 180px; overflow: hidden; position: relative;}
+nav {overflow: hidden; position: absolute; right: 0; bottom: 0;}
+nav > a {float: left; padding-right: 1.250em; 
+     color: #fff;
+     font-weight: 100;
+}
+nav > a:hover {text-decoration: none; color: #58FAF4;}
+nav > a small {
+     font-weight: 100;
+     font-size: 50%
+}
+nav .nav-list {font-size: 1.563em;}
+nav > a:nth-child(2) {padding-right: 0;}
+
+/* section */
+
+
+
+
+
+
+
+
+
