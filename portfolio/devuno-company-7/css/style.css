@@ -72,7 +72,9 @@ ul.sub_menu > li > a {
 main .slider span.slider-txt {display: block; margin-top: 30px; font-size: 15px; text-align: center; font-weight: bold;}
 main .slider span.slider-title {display: block; font-size: 34px; text-align: center; font-weight: bold; margin: 10px 0 20px 0;}
 
+.bx-wrapper .bx-pager {display: none;}
 .bx-wrapper .bx-controls-direction a {top: 43%;}
+
 /* section > banner-box */
 .banner-1-box { }
 .banner-1-box > ul {overflow: hidden; }
