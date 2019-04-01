@@ -1,3 +1,18 @@
 .card-body {padding: 0.5rem;}
 a.portfolio-item-link {display: block; width: 14rem;}
-.card {min-height: 250px; }
+.card {height: 270px; background: rgba(255,255,255,0.2);}
+.btn-group-lg>.btn, .btn-lg {
+    padding: .3rem 1rem;
+    font-size: 0.8rem;
+    line-height: 0.8;
+    border-radius: .2rem;
+}
+.work-list > a {text-decoration: none;}
+span.card-title {
+    padding: 0.5rem 1.0rem;
+    margin-bottom: 0;
+    font-size: 1.20rem; 
+    font-weight: bold;
+    color: #fff;
+    
+}
