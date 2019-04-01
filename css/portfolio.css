@@ -7,7 +7,7 @@ a.portfolio-item-link {display: block; width: 14rem;}
     line-height: 0.8;
     border-radius: .2rem;
 }
-.card-img-top {min-height: 100px;}
+.card-img-top {min-height: 100px!important;}
 .work-list > a {text-decoration: none;}
 span.card-title {
     padding: 0.5rem 1.0rem;
