@@ -1,4 +1,4 @@
-nav > br {display: none;}
+nav br {display: none;}
 .work-list > a {text-decoration: none;}
 a.portfolio-item-link {display: block; width: 14rem;}
 .card {height: 270px; background: rgba(255,255,255,0.2);}
@@ -42,7 +42,7 @@ span.card-title {
 }
 @media (max-width: 375px) {
     .item-2 {margin-top: 20px;}
-    nav > br {display: block;}
+    nav br {display: block;}
 }
 
 
