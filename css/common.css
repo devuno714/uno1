@@ -43,6 +43,11 @@ nav > a small {
 }
 nav .nav-list {font-size: 1.563em;}
 nav > a:nth-child(2) {padding-right: 0;}
+nav br {display: none;}
+
+@media (max-width: 375px) {
+     nav br {display: block;}
+ }
 
 
 
