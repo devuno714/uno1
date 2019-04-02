@@ -5,12 +5,17 @@ a.portfolio-item-link {display: block; width: 14rem;}
 .card-body {padding: 0.5rem;}
 .card-img-top {min-height: 100px!important;}
 span.card-title {
+    background: #333333;
     padding: 0.5rem 1.0rem;
     margin-bottom: 0;
     font-size: 1.20rem; 
     font-weight: bold;
     color: #fff;    
 }
+span.card-title:hover {
+    background: #000;
+}
+
 .btn-group-lg>.btn, .btn-lg {
     width: 7.5rem;
     padding: .3rem 1rem;
