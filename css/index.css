@@ -17,7 +17,7 @@ section {position: relative;}
 
 /* profile*/
 .profile {position: absolute; top: 50px; right: 0; text-align: right;}
-.profile img {max-width: 100% ; border-radius: 50%; }
+.profile img {width: 150px; height: 150px; border-radius: 50%; }
 .pf-text {text-align: right; margin-top: 50px; font-size: 1.250em; color: #fff;} 
 .pf-text .pf-text-title {font-size: 1.3rem; }
 .pf-text p > a {color: #fff; text-decoration: none;}
@@ -25,6 +25,7 @@ section {position: relative;}
 
 @media (max-width: 325px) {
      .profile {top: 30px;}
-     .pf-text {font-size: 1rem;}
+     .profile img {width: 100px; height: 100px;}
+     .pf-text {margin-top: 30px; font-size: 1rem;}
      .pf-text .pf-text-title {font-size: 1rem;}
 }
