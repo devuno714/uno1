@@ -23,3 +23,8 @@ section {position: relative;}
 .pf-text p > a {color: #fff; text-decoration: none;}
 .pf-text p > a:hover {color: #58FAF4;}
 
+@media (max-width: 325px) {
+     .profile {top: 30px;}
+     .pf-text {font-size: 1rem;}
+     .pf-text .pf-text-title {font-size: 1rem;}
+}
