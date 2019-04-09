@@ -19,9 +19,10 @@
 a.portfolio-item-link {display: block; width: 14rem;}
 .card {height: 270px; background: rgba(255,255,255,0.2);}
 .card-body {padding: 0.5rem;}
+.badge {padding: .25em 1.4em }
 .card-img-top {min-height: 100px!important;}
 span.card-title {
-    padding: 1.5rem 1.0rem;
+    padding: .5rem 1.0rem;
     margin-bottom: 0;
     font-size: 1.20rem; 
     font-weight: bold;
