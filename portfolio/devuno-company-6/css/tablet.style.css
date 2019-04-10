@@ -6,7 +6,8 @@
 .container .main-bg {padding: 0;}
 .container .main-bg a.main-bg-1 {
     display: block; width: 100%;    
-    background: url(../img/m-main-bg.jpg) 50% 50% no-repeat; background-size: cover;
+    background: url(../img/tablet-main-bg.jpg) 50% 50% no-repeat; 
+    background-size: cover;
 }
 
 .container .site-link ul li { max-width: 25%;}
