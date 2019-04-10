@@ -25,8 +25,8 @@ header .header-bottom .logo {height: 78px;}
 header .header-bottom .logo > a {display: block; line-height: 78px; }
 header .header-bottom .logo > a > img { }
 
-header .header-bottom .nav {padding: 0; margin-bottom: 0;}
-header .header-bottom .nav > ul { }
+header .header-bottom .nav {padding: 0; margin-bottom: 0; display: flex; justify-content: center;}
+header .header-bottom .nav > ul {display: flex; justify-content: center; }
 header .header-bottom .nav > ul > li {padding-right: 110px;}
 header .header-bottom .nav > ul > li > a {display: block; height: 78px; line-height: 78px; font-size: 18px; color: #222222;}
 header .header-bottom .nav ul > li:hover > a {color: #C30006; transition: 1s;}
@@ -35,7 +35,7 @@ header .header-bottom .nav > ul > li > a:after {
     position: absolute; left: 0; bottom: 250px;
 }
 header .header-bottom .nav > ul > li:last-child {margin-right: 0; }
-header .header-bottom .nav-btn {padding-left: 80px;}
+header .header-bottom .nav-btn {padding-left: 4.2%;}
 
 header .sub-nav {
     position: absolute; top: 119px; left: 0;
@@ -172,10 +172,10 @@ ul.social > li > a { }
 
 
 /* 미디어 쿼리 */
-@media all and (max-width:1220px) { 
+@media all and (max-width:1221px) { 
     header .header-top, 
-    header .header-bottom .nav > ul {display: none; }
-    header .header-bottom .nav-btn {padding-left: 0;}
+    header .header-bottom .nav > ul {display: none!important; }
+    header .header-bottom .nav-btn {padding-left: 3%;}
     .best .container {max-width: 100%; }
     .best .best-list ul li {height: auto;}
     .best .best-list ul li a > img {max-width: 100%; height: auto;}
